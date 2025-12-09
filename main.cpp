@@ -94,8 +94,9 @@ int main() {
             double value;
             cout << "Enter ID: ";
             cin >> id;
+            cin.ignore();
             cout << "Enter Name: ";
-            cin >> name;
+            getline(cin, name);
             cout << "Enter Value: ";
             cin >> value;
             cout << "Enter Age: ";
